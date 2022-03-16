@@ -3,6 +3,30 @@ import eye from '../../public/icons/eye.svg'
 import search from '../../public/icons/search.svg'
 import envelope from '../../public/icons/envelope.svg'
 
+export const Appoitment = styled.a`
+  width: 100%;
+  border: none;
+  padding: var(--spacer-xs) var(--spacer-s);
+  background: var(--button-primary-bg);
+  //border-color: var(--button-primary-bg);
+  color: var(--button-primary-color);
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-family: var(--font-family-main);
+  font-size: inherit;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  transition: .25s;
+  &:hover {
+    background: var(--button-primary-bg-hover);
+    border-color: var(--button-primary-bg-hover);
+    color: var(--button-primary-color-hover);
+    text-decoration: none;
+  }
+`;
+
 export const CallCen = styled.ul`
   list-style: none;
   margin: 0;
