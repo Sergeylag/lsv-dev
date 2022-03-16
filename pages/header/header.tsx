@@ -5,6 +5,7 @@ import Search from "./search";
 import Contact from "./contact";
 import ImgGKB from "./img_gkb";
 import CallCenter from "./call_center";
+import ContactAddres from "./contact_addres";
 
 export default function Header() {
     return (
@@ -20,7 +21,8 @@ export default function Header() {
             </Stripe>
             <Stripe2>
                     <ImgGKB/>
-                    <CallCenter></CallCenter>
+                    <CallCenter/>
+                    <ContactAddres/>
             </Stripe2>
         </header>
     );
