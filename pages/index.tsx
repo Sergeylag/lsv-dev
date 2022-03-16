@@ -8,7 +8,7 @@ export default function Home() {
       <React.Fragment>
         <Header/>
         <main>
-          Content
+          <div>Content</div>
         </main>
         <footer>
           <h3>footer</h3>

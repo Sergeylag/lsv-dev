@@ -9,7 +9,6 @@ export default function SocialLinks(){
         <ContactSocialLinks>
             <li>
                 <A rel="external noopener noreferrer" target="_blank" href="https://vk.com/gkb_50">
-                    {/*<img alt="vkontakte" src={vk.src}/>*/}
                     <Img alt="vkontakte" src={vk.src}/>
                 </A>
             </li>
