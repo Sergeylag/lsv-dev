@@ -1,6 +1,7 @@
 import React from 'react';
+import Link from 'next/link';
 import styled from "styled-components";
-import About from "./about";
+// import About from "./about";
 
 const Toggle = styled.ul`
   align-items: center;
@@ -35,15 +36,15 @@ const Toggle = styled.ul`
     top: 100%;
     transition: transform .25s, opacity .25s;
     transform: scaleY(0) translateX(-50%);
-    transform: scaleY(0) ;
+    //transform: scaleY(0) ;
     transform-origin: top center;
     width: 28rem;
     //z-index: 10;
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
   }
   li:hover > ul, li ul:hover, li ul li:hover, li ul li a:hover {
     transform: scaleY(1) ;
@@ -74,27 +75,31 @@ export default function NavToggle() {
     return (
         <Toggle>
             <li>
-                <a href="/">Главная</a>
+                <Link href="/">
+                    <a>Главная</a>
+                </Link>
             </li>
             <li>
-                <a href="/about">О больнице</a>
-                <About/>
+                <Link href="/about">
+                    <a>О больнице</a>
+                </Link>
+                {/*<About/>*/}
             </li>
-            <li>
-                <a href="/patients">Пациентам</a>
-            </li>
-            <li>
-                <a href="/cdc">Службы и отделения</a>
-            </li>
-            <li>
-                <span>Платные услуги</span>
-            </li>
-            <li>
-                <span>Пресс-центр</span>
-            </li>
-            <li>
-                <a href="/contact">Контакты</a>
-            </li>
+            {/*<li>*/}
+            {/*    <a href="/patients">Пациентам</a>*/}
+            {/*</li>*/}
+            {/*<li>*/}
+            {/*    <a href="/cdc">Службы и отделения</a>*/}
+            {/*</li>*/}
+            {/*<li>*/}
+            {/*    <span>Платные услуги</span>*/}
+            {/*</li>*/}
+            {/*<li>*/}
+            {/*    <span>Пресс-центр</span>*/}
+            {/*</li>*/}
+            {/*<li>*/}
+            {/*    <a href="/contact">Контакты</a>*/}
+            {/*</li>*/}
         </Toggle>
     );
 };

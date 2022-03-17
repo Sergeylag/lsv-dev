@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 import styled from "styled-components";
 import geo from '../../public/icons/geo.svg'
 
@@ -17,7 +18,9 @@ const ContactAddres = () => {
     return (
         <Addres>
             <div>127206, Москва, ул. Вучетича, 21</div>
-            <a href='/'>Схема проезда</a>
+            <Link href='/'>
+                <a>Схема проезда</a>
+            </Link>
         </Addres>
     );
 };
