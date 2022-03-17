@@ -31,7 +31,7 @@ export default function Header() {
                 <ImgGKB/>
                 <CallCenter/>
                 <ContactAddres/>
-                <Appoitment href='/index2'>Записаться на приём</Appoitment>
+                <Appoitment href='/'>Записаться на приём</Appoitment>
             </Stripe2>
             <NavBar/>
         </header>
