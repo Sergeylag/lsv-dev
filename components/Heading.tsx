@@ -1,7 +1,13 @@
 import React from 'react';
 
-const Heading = ({tag, text}) => {
-    const Tag = tag || 'h1'
+type datatype = {
+    tag: any,
+    text: string
+}
+
+const Heading = (props: datatype) => {
+    const {tag, text} = props
+    const Tag = tag ? tag : 'h1'
     return <Tag>{text}</Tag>
 };
 
