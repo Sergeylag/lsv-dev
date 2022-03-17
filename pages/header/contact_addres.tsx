@@ -2,7 +2,6 @@ import React from 'react';
 import styled from "styled-components";
 import geo from '../../public/icons/geo.svg'
 
-
 const Addres = styled.div`
   background: url('${geo.src}') no-repeat top var(--spacer-s) left/2.1rem auto;
   padding: var(--spacer-s) 0 var(--spacer-s) 2.6rem;
@@ -12,7 +11,6 @@ const Addres = styled.div`
     color: var(--link-color);
     transition: color .125s;
   }
-
 `
 
 const ContactAddres = () => {

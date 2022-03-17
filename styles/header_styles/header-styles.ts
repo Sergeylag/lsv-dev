@@ -19,6 +19,7 @@ export const Appoitment = styled.a`
   text-align: center;
   text-decoration: none;
   transition: .25s;
+
   &:hover {
     background: var(--button-primary-bg-hover);
     border-color: var(--button-primary-bg-hover);
@@ -31,12 +32,15 @@ export const CallCen = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
+
   li:not(:last-of-type) {
     margin-bottom: var(--spacer-xs);
   }
+
   a[href^=tel]:not(:focus) {
     text-decoration: none;
   }
+
   a {
     color: inherit;
     display: block;
@@ -49,7 +53,8 @@ export const CallCen = styled.ul`
 
 export const LogoGkb = styled.figure`
   width: 20rem;
-  a{
+
+  a {
     text-decoration: underline;
     color: var(--link-color);
     transition: color .125s;
@@ -281,14 +286,14 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-size: 1.6rem;
+    font-size: var(--font-size-normal);
     margin: 0;
-    min-width: 32rem;
+    min-width: var(--content-width-min);
     padding: 0;
     font-family: Roboto, sans-serif;
   }
-  
-  html{
+
+  html {
     color: var(--text-color-primary);
     font: 400 10px var(--font-family-main);
     margin: 0;
@@ -297,7 +302,7 @@ export const GlobalStyle = createGlobalStyle`
     -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
   }
-  
+
   figure {
     margin: 0;
     display: block;
@@ -316,13 +321,31 @@ export const GlobalStyle = createGlobalStyle`
     margin-inline-end: 0px;
     padding-inline-start: 40px;
   }
-  
+
   .logo-gkb {
     vertical-align: middle;
     border: 0;
     display: block;
     max-width: 100%;
     height: auto;
+  }
+
+  @media (min-width: 1920px) {
+    html {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    html {
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    html {
+      font-size: 11px;
+    }
   }
 `
 // export const Head = styled.header`

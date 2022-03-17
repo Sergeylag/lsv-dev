@@ -13,6 +13,7 @@ import Contact from "./contact";
 import ImgGKB from "./img_gkb";
 import CallCenter from "./call_center";
 import ContactAddres from "./contact_addres";
+import NavBar from "./nav_bar/nav_bar";
 
 export default function Header() {
     return (
@@ -30,8 +31,9 @@ export default function Header() {
                 <ImgGKB/>
                 <CallCenter/>
                 <ContactAddres/>
-                <Appoitment href='/'>Записаться на приём</Appoitment>
+                <Appoitment href='/index2'>Записаться на приём</Appoitment>
             </Stripe2>
+            <NavBar/>
         </header>
     );
 };
