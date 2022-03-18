@@ -1,5 +1,3 @@
-import React from 'react';
-
 type datatype = {
     tag: any,
     text: string
