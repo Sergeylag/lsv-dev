@@ -1,8 +1,12 @@
-import React from 'react';
 import Heading from "../components/Heading";
+import Layout from "../components/Layout";
 
 const Posts = () => {
-    return <Heading tag='' text='Публикации'/>
+    return (
+        <Layout>
+            <Heading tag='' text='Публикации'/>
+        </Layout>
+    )
 };
 
 export default Posts;

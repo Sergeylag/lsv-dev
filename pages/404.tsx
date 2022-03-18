@@ -1,9 +1,11 @@
+import Layout from "../components/Layout";
+
 const Error = () => {
     return (
-        <div>
+        <Layout>
             <h1>404</h1>
             <h2>Страница не существует</h2>
-        </div>
+        </Layout>
     )
 }
 

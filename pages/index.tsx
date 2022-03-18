@@ -1,19 +1,13 @@
-import React from 'react';
-import Header from "../components/Header";
+import Layout from "../components/Layout";
 import Heading from "../components/Heading";
-
 
 export default function Home() {
   return (
-      <React.Fragment>
-        <Header/>
+      <Layout>
         <main>
           <div>Content test Content</div>
-            <Heading tag='' text='Test'/>
+            <Heading tag='' text='Test Test'/>
         </main>
-        <footer>
-          <h3>footer</h3>
-        </footer>
-      </React.Fragment>
+      </Layout>
   )
 }
