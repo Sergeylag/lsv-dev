@@ -4,7 +4,6 @@ import {
     Appoitment,
     ContentWraper,
     EyeSight,
-    GlobalStyle,
     Stripe,
     Stripe2
 } from "../styles/header_styles/header-styles"
@@ -18,7 +17,6 @@ import NavBar from "./header/nav_bar/nav_bar";
 export default function Header() {
     return (
         <header>
-            <GlobalStyle/>
             <Stripe>
                 <ContentWraper>
                     <EyeSight>Версия для слабовидящих</EyeSight>
