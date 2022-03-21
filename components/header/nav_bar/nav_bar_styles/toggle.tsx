@@ -66,4 +66,36 @@ export const Toggle = styled.ul`
     //-webkit-transition: color .125s;
     transition: color .125s;
   }
+  li ul li ul {
+    display: block;
+    margin-left: var(--spacer-m);
+    position: static;
+    transform: none;
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+  li ul li ul li:not(:last-of-type){
+    border-bottom: 0.1rem solid var(--text-color-inverted-secondary);
+  }
+  li ul li ul li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: none;
+    transform: none;
+    transform-origin: left;
+    transition: none;
+    visibility: visible;
+    width: 80%;
+  }
+  li ul li ul li {
+    opacity: .75;
+    padding: var(--spacer-xs);
+    color: inherit;
+    display: block;
+    text-decoration: none;
+    transition: color .125s;
+  }
+
 `
