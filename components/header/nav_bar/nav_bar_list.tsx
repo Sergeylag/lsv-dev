@@ -15,8 +15,8 @@ export const NavBarList = [
             {id: 32, title: 'Диагностика', path: '/patients/research', ul:[]},
             {id: 33, title: 'Пребывание и посещение', path: '/patients/visitors', ul:[
                     {id: 331, title: 'Правила внутреннего распорядка', path: '/patients/visitors', ul:[]},
-                    {id: 332, title: 'Посещение пациентов', path: '/patients/visitors"', ul:[]},
-                    {id: 333, title: 'Правила въезда и парковки', path: '/patients/visitors"', ul:[]},
+                    {id: 332, title: 'Посещение пациентов', path: '/patients/visitors', ul:[]},
+                    {id: 333, title: 'Правила въезда и парковки', path: '/patients/visitors', ul:[]},
                 ]},
             {id: 34, title: 'Полезная информация', path: '/patients/recommendations', ul:[
                     {id: 341, title: 'Памятки пациентам', path: '/patients/recommendations', ul:[]},
