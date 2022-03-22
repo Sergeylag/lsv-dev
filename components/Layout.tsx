@@ -1,6 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import {GlobalStyle} from "../styles/header_styles/header-styles";
+import {GlobalStyle} from "../styles/global";
 
 const Layout = ({children}) => {
     return (
