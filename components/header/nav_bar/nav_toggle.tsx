@@ -6,7 +6,7 @@ import ListLinks from "./list_links";
 
 export default function NavToggle() {
     return (
-        <Toggle>
+        <Toggle className={'links'}>
             {NavBarList.map(ListLinks)}
 
             {/*{NavBarList.map(({id, title, path, ul}) => {*/}

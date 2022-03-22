@@ -12,6 +12,11 @@ const Addres = styled.div`
     color: var(--link-color);
     transition: color .125s;
   }
+  @media(max-width: 900px){
+    background-position-y: top;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
 `
 
 const ContactAddres = () => {

@@ -49,6 +49,18 @@ export const CallCen = styled.ul`
     line-height: 1;
     cursor: pointer;
   }
+  @media(max-width: 900px){
+    li {
+      align-items: flex-end;
+      display: flex;
+      gap: var(--spacer-xs);
+    }
+  }
+  @media(max-width: 610px){
+    a{
+      font-size: var(--font-size-normal);
+    }
+  }
 `;
 
 export const LogoGkb = styled.figure`
@@ -128,6 +140,29 @@ export const Stripe2 = styled.section`
   margin-left: auto;
   margin-right: auto;
   max-width: var(--content-width);
+  @media(max-width: 900px){
+    grid-auto-flow: column;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media(max-width: 720px){
+    padding-bottom: var(--spacer-xs);
+    padding-top: var(--spacer-xs);
+  }
+  @media(max-width: 560px){
+    grid-template-rows: repeat(4, auto);
+    gap: var(--spacer-xs);
+    grid-template-columns: 1fr;
+    figure{
+      margin: 0 auto;
+    }
+    ul{
+      margin: 0 auto;
+    }
+    div{
+      margin: 0 auto;
+    }
+  }
 `;
 
 export const ContentWraper = styled.div`

@@ -100,5 +100,10 @@ export const Basement = styled.footer`
       transition: color .125s;
     }
   }
+  @media(max-width: 900px){
+    .content-wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
   
 `

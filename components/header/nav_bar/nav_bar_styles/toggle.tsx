@@ -48,7 +48,7 @@ export const Toggle = styled.ul`
     visibility: visible;
     pointer-events: auto;
   }
-  
+
   li ul li {
     display: list-item;
     text-align: -webkit-match-parent;
@@ -97,5 +97,29 @@ export const Toggle = styled.ul`
     text-decoration: none;
     transition: color .125s;
   }
-
+  @media(max-width: 960px){
+    background: var(--main-color-a);
+    box-shadow: var(--block-shadow);
+    display: block;
+    opacity: 1;
+    position: absolute;
+    right: var(--spacer-xs);
+    transform: scaleY(1);
+    transform-origin: top center;
+    top: 100%;
+    z-index: 5;
+    a {
+      padding: var(--spacer-xs) var(--spacer-s);
+    }
+    li ul {
+      margin-left: var(--spacer-m);
+      visibility: visible;
+      box-shadow: none;
+      background: var(--main-color-b-1);
+      transform: none;
+      position: relative;
+      right: var(--spacer-m);
+      //width: 42rem;
+    }
+  }
 `
