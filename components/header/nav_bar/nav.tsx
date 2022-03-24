@@ -11,13 +11,6 @@ export default function Nav () {
                 <span className='b'></span>
                 <span className='c'></span>
             </label>
-
-            {/*<input type="checkbox" id="header-nav-toggle" className="visually-hidden hamburger-morpher"/>*/}
-            {/*<label htmlFor="header-nav-toggle" className="morphing-hamburger">*/}
-            {/*    <span className="a"></span>*/}
-            {/*    <span className="b"></span>*/}
-            {/*    <span className="c"></span>*/}
-            {/*</label>*/}
             <NavToggle/>
         </Navigations>
     );
