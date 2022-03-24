@@ -13,20 +13,47 @@ export const CarouselStyle = styled.section`
   width: 100%;
 
   .container-slider {
-    border: 1px solid green;
-    width: 110rem;
-    height: 35rem;
+    //width: 110rem;
+    //height: 35rem;
+
+    display: flex;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+
+    color: black;    border: 1px solid green; 
+    //margin-left: 100px;
+  }
+  
+  .carousel-item{
+    border: 1px solid blue;
+    
+    width: 100%;
+    flex: none;
+    margin: 0;
+    padding: 0;
+    transition: .25s;
+
+    transform: translateX(-0%);
+
+  figure{
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
+
   }
 
   .btn-slide {
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
-    background-color: transparent;
-    background-size: 2.5rem auto;
-    border-radius: 0.4rem;
+    //background-color: transparent;
+    //background-size: 2.5rem auto;
+    //border-radius: 0.4rem;
     box-shadow: none;
-    height: 8rem;
-    width: 4rem;
+    //height: 8rem;
+    //width: 4rem;
     opacity: .5;
     padding: 0;
 
