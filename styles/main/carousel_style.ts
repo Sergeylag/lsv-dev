@@ -13,35 +13,89 @@ export const CarouselStyle = styled.section`
   width: 100%;
 
   .container-slider {
-    //width: 110rem;
-    //height: 35rem;
-
     display: flex;
     list-style: none;
     margin: 0;
     overflow: hidden;
     padding: 0;
-
-    color: black;    border: 1px solid green; 
-    //margin-left: 100px;
   }
-  
-  .carousel-item{
-    border: 1px solid blue;
-    
+
+  .carousel-item {
     width: 100%;
     flex: none;
     margin: 0;
     padding: 0;
     transition: .25s;
 
-    transform: translateX(-0%);
+    figure {
+      position: relative;
+      width: 100%;
+      margin: 0;
 
-  figure{
-    position: relative;
-    width: 100%;
-    margin: 0;
-  }
+      .image {
+        height: var(--carousel-height);
+        width: 100%;
+
+        img {
+          height: 100%;
+          object-fit: cover;
+          object-position: center right;
+          width: 100%;
+        }
+      }
+
+      figcaption {
+        align-items: flex-start;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        left: 0;
+        padding: 0 var(--spacer-xl);
+        position: absolute;
+        right: 0;
+        transition: background .25s;
+        top: 0;
+        z-index: 2;
+
+        .title {
+          font: 700 var(--font-size-xl) var(--font-family-heading);
+          margin: 0;
+          max-width: 48rem;
+        }
+
+        .lead {
+          font-size: var(--font-size-increased);
+          margin-top: var(--spacer-s);
+        }
+
+        .link {
+          font-size: var(--font-size-small);
+          margin-top: var(--spacer-m);
+
+          a {
+            color: inherit;
+            display: block;
+            padding: var(--spacer-xs) var(--spacer-s);
+            background: var(--button-ghost-bg);
+            border-color: var(--button-ghost-color);
+            border: 0.1rem solid;
+            border-radius: 0.4rem;
+            cursor: pointer;
+            font-family: var(--font-family-main);
+            font-size: inherit;
+            margin: 0;
+            text-align: center;
+            text-decoration: none;
+            transition: .25s;
+            &:hover{
+              background: var(--button-ghost-bg-hover);
+              border-color: var(--main-color-b);
+            }
+          }
+        }
+      }
+    }
 
   }
 

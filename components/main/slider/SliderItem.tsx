@@ -1,6 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 
-export default function SliderItem ({id, src, height, width}, current) {
+export default function SliderItem({id, src, height, width, title, lead, href, textLink}, current) {
     const transform = {
         transform: `translateX(${current}%)`
     }
@@ -11,8 +12,15 @@ export default function SliderItem ({id, src, height, width}, current) {
                     <Image src={src} alt='lazy' width={width} height={height}/>
                 </div>
                 <figcaption>
-                    <p className='title'>{id}</p>
-                    <div className='lead'></div>
+                    <p className='title'>{title}</p>
+                    {lead !== '#' ? (<div className='lead'>{lead}</div>) : null}
+                    {href !== '#' ? (
+                        <div className='link'>
+                            <Link href={href}>
+                                <a>{textLink}</a>
+                            </Link>
+                        </div>
+                    ) : null}
                 </figcaption>
             </figure>
         </li>

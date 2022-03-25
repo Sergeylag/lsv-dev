@@ -36,7 +36,7 @@ export const Toggle = styled.ul`
     //transform: scaleY(0) ;
     transform-origin: top center;
     width: 28rem;
-    //z-index: 10;
+    z-index: 10;
     list-style: none;
     margin: 0;
     padding: 0;
