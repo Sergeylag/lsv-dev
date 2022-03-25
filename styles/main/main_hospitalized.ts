@@ -1,0 +1,42 @@
+import styled from "styled-components";
+
+export const MainHospitalized = styled.aside`
+  background: var(--main-color-b-4-shade);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  div{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacer-s);
+    max-width: 70rem;
+    padding-left: var(--spacer-xs);
+    padding-right: var(--spacer-xs);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    .image{
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      mix-blend-mode: darken;
+      position: absolute;
+      top: 0;
+      transform: translateX(-10rem);
+      img{
+        height: 100%;
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+    p{
+      margin-left: 12rem;
+      line-height: 1.286;
+      a{
+        text-decoration: underline;
+        color: var(--link-color);
+        transition: color .125s;
+      }
+    }
+  }
+`;
