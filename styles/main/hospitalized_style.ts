@@ -38,6 +38,10 @@ export const MainHospitalized = styled.aside`
         text-decoration: underline;
         color: var(--link-color);
         transition: color .125s;
+        &:hover{
+          color: var(--link-color-hover);
+          text-decoration: underline;
+        }
       }
     }
   }
