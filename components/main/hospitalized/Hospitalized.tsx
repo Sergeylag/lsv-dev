@@ -11,10 +11,11 @@ export default function Hospitalized () {
                 <figure className='image'>
                     <Image alt='' src={hospitalized.src} width={hospitalized.width} height={hospitalized.height}/>
                 </figure>
-                <p>Если ваш близкий</p>
+                <p>{'Если ваш близкий '}
                 <Link href='/patients/visitors'>
                     <a>госпитализирован к нам в больницу</a>
                 </Link>
+                </p>
             </div>
         </MainHospitalized>
     );

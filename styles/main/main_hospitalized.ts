@@ -16,6 +16,7 @@ export const MainHospitalized = styled.aside`
     margin-left: auto;
     margin-right: auto;
     .image{
+      margin: 0;
       bottom: 0;
       left: 0;
       height: 100%;
@@ -27,6 +28,7 @@ export const MainHospitalized = styled.aside`
         height: 100%;
         object-fit: contain;
         width: 100%;
+        max-width: 75% !important;
       }
     }
     p{
