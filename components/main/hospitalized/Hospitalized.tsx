@@ -1,4 +1,4 @@
-import {MainHospitalized} from "../../../styles/main/main_hospitalized";
+import {MainHospitalized} from "../../../styles/main/hospitalized_style";
 import Image from "next/image";
 import hospitalized from '../../../public/img/main/hospitalized/hospitalized.png'
 import Link from "next/link";

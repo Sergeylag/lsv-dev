@@ -1,4 +1,4 @@
-import {MainNumbers} from "../../../styles/main/main_numbers_style";
+import {MainNumbers} from "../../../styles/main/numbers_style";
 import {NumberList} from "./number_list";
 import NumberItem from "./NumberItem";
 
