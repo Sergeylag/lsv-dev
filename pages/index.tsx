@@ -6,6 +6,7 @@ import Hospitalized from "../components/main/hospitalized/Hospitalized";
 import Departments from "../components/main/departments/Departments";
 import News from "../components/main/news/News";
 import Chief from "../components/main/chief/Chief";
+import Testimonials from "../components/main/testimonials/Testimonials";
 
 export default function Home() {
     return (
@@ -16,6 +17,7 @@ export default function Home() {
             <Departments/>
             <News/>
             <Chief/>
+            <Testimonials/>
             <div>Content test Content</div>
             <Heading tag='' text='Test Test'/>
         </Main>
