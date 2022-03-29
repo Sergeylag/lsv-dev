@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {CarouselStyle} from "../../../styles/main/carousel_style";
 import BtnSlider from './BtnSlider'
 import {SliderList} from "./slider_list";
@@ -6,25 +6,30 @@ import SliderItem from "./SliderItem";
 
 
 export default function Slider () {
-    let timer;
     const [current, setCurrent] = useState(0)
+    const [currentInterval, setCurrentInterval] = useState(0)
+
+    useEffect(() => {
+        let inter = setTimeout(() => {
+            autoSlider()
+        }, 5000)
+        setCurrentInterval(Number(inter))
+    }, [current])
 
     function nextSlide() {
+        clearTimeout(currentInterval)
         setCurrent((current != ((SliderList.length - 1) * -100)) ? current - 100 : 0)
-
     }
 
     function prevSlide() {
+        clearTimeout(currentInterval)
         setCurrent((current != 0) ? current + 100 : ((SliderList.length - 1) * -100))
     }
-    // console.log('1',timer)
-    function autoSlider() { // отключил автоматическую прокрутку слайдера
-       timer = setTimeout(nextSlide, 5000)
-        console.log('2',timer)
-    }
-    // console.log('3',timer)
 
-    // autoSlider()
+    function autoSlider() { // отключил автоматическую прокрутку слайдера
+        setCurrent((current != ((SliderList.length - 1) * -100)) ? current - 100 : 0)
+    }
+
     return (
         <CarouselStyle>
             <BtnSlider moveSlide={prevSlide} direction={"prev"}/>

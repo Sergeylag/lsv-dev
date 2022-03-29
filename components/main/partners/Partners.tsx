@@ -16,17 +16,17 @@ export default function Partners() {
     }, [current])
 
     function autoSlider(){
-        setCurrent((current != -200) ? current - 100 : 0)
+        setCurrent((current != ((PartnersList.length - 4) * -100)) ? current - 100 : 0)
     }
 
     function nextSlide() {
         clearTimeout(currentInterval)
-        setCurrent((current != -200) ? current - 100 : 0)
+        setCurrent((current != ((PartnersList.length - 4) * -100)) ? current - 100 : 0)
     }
 
     function prevSlide() {
         clearTimeout(currentInterval)
-        setCurrent((current != 0) ? current + 100 : -200)
+        setCurrent((current != 0) ? current + 100 : ((PartnersList.length - 4) * -100))
     }
 
     return (
