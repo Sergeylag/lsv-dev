@@ -8,6 +8,7 @@ import News from "../components/main/news/News";
 import Chief from "../components/main/chief/Chief";
 import Testimonials from "../components/main/testimonials/Testimonials";
 import Feedback from "../components/main/feedback/Feedback";
+import Promo from "../components/main/promo/Promo";
 
 export default function Home() {
     return (
@@ -20,6 +21,7 @@ export default function Home() {
             <Chief/>
             <Testimonials/>
             <Feedback/>
+            <Promo/>
             <div>Content test Content</div>
             <Heading tag='' text='Test Test'/>
         </Main>
