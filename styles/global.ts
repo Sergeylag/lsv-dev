@@ -150,9 +150,9 @@ export const GlobalStyle = createGlobalStyle`
     height: auto;
   }
 
-  @media (min-width: 1920px) {
+  @media (min-width: 1440px) {
     html {
-      font-size: 14px;
+      font-size: 11px;
     }
   }
 
@@ -161,10 +161,10 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 12px;
     }
   }
-
-  @media (min-width: 1440px) {
+  
+  @media (min-width: 1920px) {
     html {
-      font-size: 11px;
+      font-size: 14px;
     }
   }
 `

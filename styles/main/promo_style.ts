@@ -44,6 +44,10 @@ export const MainPromo = styled.section`
           }
         }
       }
+      @media (max-width: 800px){
+        grid-template-columns: 1fr;
+        max-width: 40rem;
+      }
     }
   }
 `;

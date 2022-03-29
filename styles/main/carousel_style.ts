@@ -33,8 +33,9 @@ export const CarouselStyle = styled.section`
       margin: 0;
 
       .image {
-        height: var(--carousel-height);
+        //height: var(--carousel-height);
         width: 100%;
+        height: 100%;
 
         img {
           height: 100%;
@@ -62,11 +63,17 @@ export const CarouselStyle = styled.section`
           font: 700 var(--font-size-xl) var(--font-family-heading);
           margin: 0;
           max-width: 48rem;
+          @media (max-width: 640px){
+            font-size: var(--font-size-large);
+          }
         }
 
         .lead {
           font-size: var(--font-size-increased);
           margin-top: var(--spacer-s);
+          @media (max-width: 640px){
+            font-size: var(--font-size-normal);
+          }
         }
 
         .link {
@@ -93,6 +100,12 @@ export const CarouselStyle = styled.section`
               border-color: var(--main-color-b);
             }
           }
+        }
+        @media(max-width: 720px){
+          background: rgba(11,10,10,0.4);
+        }
+        @media(max-width: 414px){
+          padding: 0 var(--spacer-m);
         }
       }
     }
@@ -133,6 +146,14 @@ export const CarouselStyle = styled.section`
       box-shadow: none;
       filter: drop-shadow(0 0 .2rem var(--main-color-b-2)) drop-shadow(0 0 .4rem var(--main-color-a-1));
     }
+    @media(max-width: 640px){
+      background-size: 2rem auto;
+      width: 3rem;
+    }
+    @media(max-width: 414px){
+      background-size: 1.6rem auto;
+      width: 2.4rem;
+    }
   }
 
   .prev {
@@ -146,4 +167,11 @@ export const CarouselStyle = styled.section`
     left: 100%;
     right: auto;
   }
+  @media (max-width: 720px){
+    --carousel-height: 32rem;
+  }
+  @media (max-width: 640px){
+    --carousel-height: 28rem;
+  }
+  
 `;

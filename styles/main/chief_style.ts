@@ -46,6 +46,9 @@ export const MainChief = styled.section`
           object-fit: cover;
           width: 100% !important;
         }
+        @media(max-width: 800px){
+          margin: 0 auto;
+        }
       }
 
       figcaption {
@@ -58,6 +61,9 @@ export const MainChief = styled.section`
         .title {
 
         }
+      }
+      @media (max-width: 800px){
+        text-align: center;
       }
     }
 
@@ -113,8 +119,19 @@ export const MainChief = styled.section`
             color: var(--text-color-form-contol);
             text-decoration: none;
           }
+          @media (max-width: 500px){
+            margin-top: var(--spacer-s);
+          }
         }
+        @media (max-width: 500px){
+          grid-template-columns: 1fr;
+        }       
       }
+    }
+    @media (max-width: 800px){
+      grid-gap: var(--spacer-s);
+      grid-template-columns: 1fr;
+      max-width: 60rem;
     }
   }
 
@@ -215,6 +232,9 @@ export const MainChief = styled.section`
         border-color: var(--input-border-focus);
         box-shadow: 0.1rem 0.1rem 0.2rem var(--input-border-focus);
         outline: none;
+      }
+      @media (max-width: 800px){
+        min-height: 14rem;
       }
     }
   }

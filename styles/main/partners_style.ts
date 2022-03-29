@@ -56,6 +56,12 @@ export const MainPartners = styled.section`
         transition: .25s;
         padding: 0 var(--spacer-s);
         width: 25%;
+        @media (max-width: 720px){
+          width: calc(100% / 3);
+        }
+        @media (max-width: 480px){
+          width: 50%;
+        }
       }
     }
   }
