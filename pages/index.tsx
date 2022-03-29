@@ -1,4 +1,3 @@
-import Heading from "../components/Heading";
 import {Main} from "../styles/main";
 import Slider from "../components/main/slider/Slider";
 import Number from "../components/main/numbers/Number";
@@ -9,6 +8,7 @@ import Chief from "../components/main/chief/Chief";
 import Testimonials from "../components/main/testimonials/Testimonials";
 import Feedback from "../components/main/feedback/Feedback";
 import Promo from "../components/main/promo/Promo";
+import Partners from "../components/main/partners/Partners";
 
 export default function Home() {
     return (
@@ -22,8 +22,7 @@ export default function Home() {
             <Testimonials/>
             <Feedback/>
             <Promo/>
-            <div>Content test Content</div>
-            <Heading tag='' text='Test Test'/>
+            <Partners/>
         </Main>
     )
 }
