@@ -30,6 +30,9 @@ export const MainHospitalized = styled.aside`
         width: 100%;
         max-width: 75% !important;
       }
+      @media(max-width: 860px){
+        left: 8rem;
+      }
     }
     p{
       margin-left: 12rem;
@@ -43,8 +46,12 @@ export const MainHospitalized = styled.aside`
           text-decoration: underline;
         }
       }
-      @media(max-width: 440px){
-        margin-left: 7rem;
+      @media(max-width: 830px){
+        margin-left: 9rem;
+      }
+      @media(max-width: 760px){
+        margin-left: 10rem;
+        font-size: var(--font-size-large);
       }
     }
   }

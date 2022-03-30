@@ -63,7 +63,7 @@ export const MainNumbers = styled.section`
         font-size: var(--font-size-decreased);
       }
     }
-    @media (max-width: 800px){
+    @media (max-width: 902px){
       grid-gap: var(--spacer-s);
       padding: 0 var(--spacer-s);
       grid-template-columns: 1fr 1fr;
