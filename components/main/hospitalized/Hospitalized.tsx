@@ -1,5 +1,4 @@
 import {MainHospitalized} from "../../../styles/main/hospitalized_style";
-import Image from "next/image";
 import hospitalized from '../../../public/img/main/hospitalized/hospitalized.png'
 import Link from "next/link";
 
@@ -9,7 +8,7 @@ export default function Hospitalized () {
         <MainHospitalized>
             <div>
                 <figure className='image'>
-                    <Image alt='' src={hospitalized.src} width={hospitalized.width} height={hospitalized.height}/>
+                    <img alt='' src={hospitalized.src} width={hospitalized.width} height={hospitalized.height}/>
                 </figure>
                 <p>{'Если ваш близкий '}
                 <Link href='/patients/visitors'>

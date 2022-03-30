@@ -43,6 +43,10 @@ export const MainPartners = styled.section`
       background-image: url("${right.src}");
       left: 100%;
       right: auto;
+      @media(max-width: 1140px){
+        left: 80%;
+        visibility: hidden;
+      }
     }
     .carousel-container{
       display: flex;

@@ -166,6 +166,10 @@ export const CarouselStyle = styled.section`
     background-image: url("${rightBtn.src}");
     left: 100%;
     right: auto;
+    @media(max-width: 1180px){
+      left: 80%;
+      visibility: hidden;
+    }
   }
   @media (max-width: 720px){
     --carousel-height: 32rem;

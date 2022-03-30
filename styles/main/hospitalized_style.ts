@@ -43,6 +43,9 @@ export const MainHospitalized = styled.aside`
           text-decoration: underline;
         }
       }
+      @media(max-width: 440px){
+        margin-left: 7rem;
+      }
     }
   }
 `;

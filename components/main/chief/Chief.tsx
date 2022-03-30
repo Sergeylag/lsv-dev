@@ -1,7 +1,6 @@
 import React from 'react';
 import {MainChief} from "../../../styles/main/chief_style";
-import Image from "next/image";
-import pogonin from '../../../public/img/main/chief/pogonin.jpg'
+import p from '../../../public/img/main/chief/pogonin.jpg'
 import FormChief from "./FormChief";
 
 
@@ -12,7 +11,7 @@ export default function Chief () {
             <div className='content-wrapper'>
                 <figure className='chief-figure'>
                     <div className='image'>
-                        <Image alt='' src={pogonin.src} width={pogonin.width} height={pogonin.height}/>
+                        <img alt='lazy' src={p.src}/>
                     </div>
                     <figcaption>
                         <div className='name'> Погонин <br/>Алексей Владимирович </div>
