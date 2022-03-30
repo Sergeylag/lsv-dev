@@ -31,7 +31,7 @@ export const MainHospitalized = styled.aside`
         max-width: 75% !important;
       }
       @media(max-width: 860px){
-        left: 8rem;
+        left: 6rem;
       }
     }
     p{
@@ -52,6 +52,9 @@ export const MainHospitalized = styled.aside`
       @media(max-width: 760px){
         margin-left: 10rem;
         font-size: var(--font-size-large);
+      }
+      @media(max-width: 550px){
+        margin-left: 12rem;
       }
     }
   }
