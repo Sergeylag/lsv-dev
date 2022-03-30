@@ -1,17 +1,12 @@
 import {AboutMain} from "../../styles/about/about";
-import Navigation from "../../components/Navigation";
-import Link from "next/link";
+import AboutNavigation from "../../components/about/AboutNavigation";
+import AboutContent from "../../components/about/AboutContent";
 
 const About = () => {
     return (
         <AboutMain>
-            <Navigation>
-                <Link href='/'>
-                    <a>Главная</a>
-                </Link>
-                <span>О больнице</span>
-            </Navigation>
-
+            <AboutNavigation/>
+            <AboutContent/>
         </AboutMain>
     )
 };
