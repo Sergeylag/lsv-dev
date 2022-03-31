@@ -1,9 +1,14 @@
 import React from 'react';
-import Plug from "../../components/Plug";
+import PatientNavigation from "../../components/patients/PatientNavigation";
+import {PatientsMain} from "../../styles/patients/patients";
+import PatientsContent from "../../components/patients/PatientsContent";
 
 const Patients = () => {
     return (
-        <Plug/>
+        <PatientsMain>
+            <PatientNavigation/>
+            <PatientsContent/>
+        </PatientsMain>
     );
 };
 

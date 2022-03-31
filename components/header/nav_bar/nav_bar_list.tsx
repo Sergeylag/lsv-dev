@@ -31,10 +31,12 @@ export const NavBarList = [
             // {id: 36, title: 'Отзывы пациентов', path: '/patients/testimonials', ul:[]},
             // {id: 37, title: 'Оставить отзыв о больнице', path: '/patients/feedback', ul:[]},
         ]},
-    {id: 4, title: 'Службы и отделения', path: '/cdc', ul: [
-            // {id: 41, title: 'Консультационно-диагностический центр', path: '/cdc', ul:[]},
-        ]},
-    {id: 5, title: 'Платные услуги', path: '#', ul: [
+    {id: 4, title: 'Диагностический центр', path: '/cdc', ul: [
+    // {id: 4, title: 'Службы и отделения', path: '#', ul: [
+    //         {id: 41, title: 'Консультационно-диагностический центр', path: '/cdc', ul:[]},
+    //         {id: 42, title: 'Отделение платных медицинских услуг', path: '/services', ul: []},
+                ]},
+    {id: 5, title: 'Платные услуги', path: '/services', ul: [
             // {id:51, title: 'Услуги', path:'/services', ul:[]},
             // {id:52, title: 'Специалисты', path:'#', ul:[]},
             // {id:53, title: 'Прайс-лист', path:'#', ul:[]},
