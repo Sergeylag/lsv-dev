@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function SliderItem({id, src, height, width, title, lead, href, textLink}, current) {
@@ -9,7 +8,7 @@ export default function SliderItem({id, src, height, width, title, lead, href, t
         <li key={id} className='carousel-item' style={transform}>
             <figure>
                 <div className='image'>
-                    <Image src={src} alt='lazy' width={width} height={height}/>
+                    <img src={src} alt='lazy' width={width} height={height}/>
                 </div>
                 <figcaption>
                     <p className='title'>{title}</p>

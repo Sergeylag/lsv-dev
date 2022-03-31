@@ -33,9 +33,8 @@ export const CarouselStyle = styled.section`
       margin: 0;
 
       .image {
-        //height: var(--carousel-height);
+        height: var(--carousel-height);
         width: 100%;
-        height: 100%;
 
         img {
           height: 100%;
@@ -146,6 +145,13 @@ export const CarouselStyle = styled.section`
       box-shadow: none;
       filter: drop-shadow(0 0 .2rem var(--main-color-b-2)) drop-shadow(0 0 .4rem var(--main-color-a-1));
     }
+    @media(max-width: 1180px){
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
+      background-color: transparent;
+      box-shadow: none;
+      filter: drop-shadow(0 0 .2rem var(--main-color-b-2)) drop-shadow(0 0 .4rem var(--main-color-a-1));
+    }
     @media(max-width: 640px){
       background-size: 2rem auto;
       width: 3rem;
@@ -160,6 +166,12 @@ export const CarouselStyle = styled.section`
     background-image: url("${leftBtn.src}");
     left: auto;
     right: 100%;
+    @media(max-width: 1180px){
+      right: 95%;
+    }
+    @media(max-width: 700px){
+      right: 92%;
+    }  
   }
 
   .next {
@@ -167,8 +179,10 @@ export const CarouselStyle = styled.section`
     left: 100%;
     right: auto;
     @media(max-width: 1180px){
-      left: 80%;
-      visibility: hidden;
+      left: 95%;
+    }
+    @media(max-width: 700px){
+      left: 92%;
     }
   }
   @media (max-width: 720px){

@@ -51,9 +51,30 @@ export const AboutInfo = styled.section`
             font-size: var(--font-size-xxl);
             font-weight: 700;
             line-height: calc(51/44);
+            @media (max-width: 600px){
+              font-size: var(--font-size-xl);
+            }
+          }
+          @media (max-width: 600px){
+            font-size: var(--font-size-large);
           }
         }
+        @media (max-width: 480px){
+          max-width: none;
+        }
       }
+      @media (max-width: 600px){
+        padding-bottom: var(--spacer-s);
+        padding-top: var(--spacer-s);
+      }
+    }
+    @media (max-width: 600px){
+      gap: var(--spacer-s) 0;
+    }
+    @media (max-width: 480px){
+      grid-template-columns: 1fr;
+      margin: var(--spacer-s) auto;
+      max-width: 40rem;
     }
   }
 `;

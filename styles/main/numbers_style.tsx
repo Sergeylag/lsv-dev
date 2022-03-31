@@ -27,9 +27,17 @@ export const MainNumbers = styled.section`
             width: 100%;
           }
           @media (max-width: 640px){
-            align-items: center;
-            display: flex;
-            max-width: 100%;
+            //align-items: center;
+            //display: flex;
+            //max-width: 100%;
+            margin-right: var(--spacer-s);
+          }
+          @media (max-width: 414px){
+            height: 3.2rem;
+            width: 3.2rem;
+          }
+          @media (max-width: 375px){
+            margin-right: var(--spacer-xs);
           }
         }
         
@@ -38,6 +46,7 @@ export const MainNumbers = styled.section`
             align-items: flex-end;
             display: flex;
           }
+          
         }
         @media (max-width: 640px){
           align-items: center;
@@ -51,11 +60,23 @@ export const MainNumbers = styled.section`
           line-height: normal;
           margin-right: var(--spacer-xs);
         }
+        @media (max-width: 414px){
+          font-size: var(--font-size-large);
+        }
+        @media (max-width: 375px){
+          font-size: var(--font-size-increased);
+        }
       }
       .primary{
         font-size: var(--font-size-large);
         @media (max-width: 640px){
           margin-right: var(--spacer-xs);
+        }
+        @media (max-width: 414px){
+          font-size: var(--font-size-increased);
+        }
+        @media (max-width: 375px){
+          font-size: var(--font-size-normal);
         }
       }
       .secondary{

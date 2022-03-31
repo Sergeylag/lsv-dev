@@ -103,6 +103,22 @@ export const GlobalStyle = createGlobalStyle`
     --layout-bg-footer: #fff;
     --layout-bg-header: #fff;
     --layout-bg-main: #fff;
+    @media (max-width: 640px) {
+      --font-size-xxl: 4.2rem;
+      --font-size-xl: 2.9rem;
+    }
+    @media (max-width: 600px) {
+      --font-size-xxl: 4rem;
+      --font-size-xl: 2.8rem;
+    }
+    @media (max-width: 480px) {
+      --font-size-xxl: 3.8rem;
+      --font-size-xl: 2.5rem;
+    }
+    @media (max-width: 414px) {
+      --font-size-xxl: 3.6rem;
+      --font-size-xl: 2.4rem;
+    }
   }
 
   body {
@@ -161,7 +177,7 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 12px;
     }
   }
-  
+
   @media (min-width: 1920px) {
     html {
       font-size: 14px;

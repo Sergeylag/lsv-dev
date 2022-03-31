@@ -25,10 +25,19 @@ export const AboutAreas = styled.section`
         strong{
           font-size: var(--font-size-increased);
         }
+        @media (max-width: 480px){
+          margin-top: var(--spacer-s);
+        }
       }
       figure{
         margin: 0;
       }
+      @media (max-width: 480px){
+        padding: var(--spacer-s);
+      }
+    }
+    @media (max-width: 600px){
+      grid-template-columns: 1fr;
     }
   }
 `;
