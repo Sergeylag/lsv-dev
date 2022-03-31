@@ -6,7 +6,7 @@ import HospitalDepartmentCart from "../../components/hospital_department_cart/Ho
 import cdcBg from '../../public/img/cdc/cdc_bg.svg'
 import CdcAside from "../../components/cdc/CdcAside";
 import {
-    departmentHeadCard,
+    headCard,
     headerLinks,
     headerTitle
 } from "../../components/cdc/cdc_info_list";
@@ -19,7 +19,7 @@ const Cdc = () => {
                 title={headerTitle}
                 headerLinks={headerLinks}
                 asideBg={cdcBg.src}
-                headCard={departmentHeadCard}
+                headCard={headCard}
             >
                 <CdcAside/>
             </HospitalDepartmentCart>
