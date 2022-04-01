@@ -2,9 +2,9 @@ import React from 'react';
 
 const DepartmentMedia = () => {
     return (
-        <div>
-            
-        </div>
+        <section>
+            <h2>Фото и видео</h2>
+        </section>
     );
 };
 

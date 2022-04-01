@@ -5,9 +5,9 @@ const AsideCart = ({children,bg}) => {
     const AsiedBg = styled.aside`
     background-image: url("${bg}");
     `;
-    console.log(bg)
+
     return (
-        <AsiedBg>
+        <AsiedBg className='section-image'>
                 {children}
         </AsiedBg>
     );

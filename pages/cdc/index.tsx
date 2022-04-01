@@ -7,9 +7,14 @@ import cdcBg from '../../public/img/cdc/cdc_bg.svg'
 import CdcAside from "../../components/cdc/CdcAside";
 import {
     headCard,
+    about,
     headContact,
     headerLinks,
-    headerTitle
+    headerTitle,
+    services,
+    textForServices,
+    specializations,
+    servicesForPatients
 } from "../../components/cdc/cdc_info_list";
 
 const Cdc = () => {
@@ -22,6 +27,11 @@ const Cdc = () => {
                 asideBg={cdcBg.src}
                 headCard={headCard}
                 headContact={headContact}
+                about={about}
+                services={services}
+                textForServices={textForServices}
+                specializations={specializations}
+                servicesForPatients={servicesForPatients}
             >
                 <CdcAside/>
             </HospitalDepartmentCart>

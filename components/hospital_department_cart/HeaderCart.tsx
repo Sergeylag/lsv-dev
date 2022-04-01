@@ -5,6 +5,7 @@ const HeaderCart = ({title,headerLinks}) => {
     return (
         <header>
             <h1>{title}</h1>
+            <nav className='section-nav'>
             {headerLinks.map(({link,text},id)=>{
                 return(
                     <Link key={id} href={link}>
@@ -12,6 +13,7 @@ const HeaderCart = ({title,headerLinks}) => {
                     </Link>
                 )
             })}
+            </nav>
         </header>
     );
 };
