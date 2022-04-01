@@ -4,7 +4,7 @@ import HeaderCart from "./HeaderCart";
 import AsideCart from "./AsideCart";
 import DepartmentInfoCart from "./department_info/DepartmentInfoCart";
 
-const HospitalDepartmentCart = ({children,title,headerLinks,asideBg,headCard}) => {
+const HospitalDepartmentCart = ({children,title,headerLinks,asideBg,headCard,headContact}) => {
     console.log(headCard)
     return (
         <HospitalDepartmentCartWrapper>
@@ -12,7 +12,7 @@ const HospitalDepartmentCart = ({children,title,headerLinks,asideBg,headCard}) =
             <AsideCart bg={asideBg}>
                 {children}
             </AsideCart>
-            <DepartmentInfoCart headCard={headCard}/>
+            <DepartmentInfoCart headCard={headCard} headContact={headContact}/>
         </HospitalDepartmentCartWrapper>
     );
 };

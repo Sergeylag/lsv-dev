@@ -21,4 +21,8 @@ export const headContact = {
         {href:'mailto:ovd-gkb50@yandex.ru', text:'ovd-gkb50@yandex.ru'},
     ],
     btnHref:'/cdc/appointment',
+    action:[
+        {tag:'p', href:'#', text:'вам потребуется скан направления из поликлиники'},
+        {tag:'a', href:'/cdc/schedule', text:'Актуальное расписание'},
+    ]
 }
