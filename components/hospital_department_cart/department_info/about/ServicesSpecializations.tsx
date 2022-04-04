@@ -5,7 +5,7 @@ const ServicesSpecializations = ({servicesList}) => {
     const {headTag, headText, bodyTag, list} = servicesList
 
     return (
-        <section className="department-about">
+        <section className="services__specializations">
             {headTag == 'h2' ? <h2>{headText}</h2> : (
                 headTag == 'h3' ? <h3>{headText}</h3> : null
             )}
@@ -13,7 +13,7 @@ const ServicesSpecializations = ({servicesList}) => {
                 { bodyTag == 'li' ? (
                     list.map((e,id)=>{
                         return(
-                            <li key={id}>{e}</li>
+                            <li key={id}><p>{e}</p></li>
                         )
                     })
                     ) : ( list.map((e, id) => {

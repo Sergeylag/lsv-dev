@@ -2,6 +2,7 @@ import noFoto from '../../public/img/NoFoto.png'
 import couch from '../../public/img/cdc/services/couch.svg'
 import buildings from '../../public/img/cdc/services/buildings.svg'
 import notes from '../../public/img/cdc/services/notes.svg'
+import schedule from '../../public/img/cdc/schedule.svg'
 
 export const headerTitle = 'Консультативно-диагностический центр'
 
@@ -25,8 +26,8 @@ export const headContact = {
     ],
     btnHref: '/cdc/appointment',
     action: [
-        {tag: 'p', href: '#', text: 'вам потребуется скан направления из поликлиники'},
-        {tag: 'a', href: '/cdc/schedule', text: 'Актуальное расписание'},
+        {tag: 'p', href: '#', text: 'вам потребуется скан направления из поликлиники', src:'#'},
+        {tag: 'a', href: '/cdc/schedule', text: 'Актуальное расписание', src:schedule.src},
     ]
 }
 
@@ -76,3 +77,11 @@ export const servicesForPatients = {
         {src:notes.src, link:'#', textLink:'Какие документы необходимы при обращении в КДЦ'},
     ]
 }
+
+export const doctors = [
+    {src:noFoto.src, href:'#', fio:'Шамин Алексей Иванович', position:'врачь-хирург', qualification:'д.м.н., профессор', experience:'10 лет'},
+    {src:noFoto.src, href:'#', fio:'Шамин Алексей Иванович', position:'врачь-хирург', qualification:'', experience:'10 лет'},
+    {src:noFoto.src, href:'#', fio:'Шамин Алексей Иванович', position:'врачь-хирург', qualification:'д.м.н., профессор', experience:'10 лет'},
+    {src:noFoto.src, href:'#', fio:'Шамин Алексей Иванович', position:'врачь-хирург', qualification:'', experience:'10 лет'},
+    {src:noFoto.src, href:'#', fio:'Шамин Алексей Иванович', position:'врачь-хирург', qualification:'д.м.н., профессор', experience:'10 лет'},
+]

@@ -14,7 +14,8 @@ import {
     services,
     textForServices,
     specializations,
-    servicesForPatients
+    servicesForPatients,
+    doctors
 } from "../../components/cdc/cdc_info_list";
 
 const Cdc = () => {
@@ -32,6 +33,7 @@ const Cdc = () => {
                 textForServices={textForServices}
                 specializations={specializations}
                 servicesForPatients={servicesForPatients}
+                doctors={doctors}
             >
                 <CdcAside/>
             </HospitalDepartmentCart>

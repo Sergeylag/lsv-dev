@@ -3,9 +3,10 @@ import {HospitalDepartmentCartWrapper} from "../../styles/hospital_department_ca
 import HeaderCart from "./HeaderCart";
 import AsideCart from "./AsideCart";
 import DepartmentInfoCart from "./department_info/DepartmentInfoCart";
+import DepartmentDoctors from "./department_info/DepartmentDoctors";
 
 const HospitalDepartmentCart = ({children,title,headerLinks,asideBg,headCard,headContact,about,services,
-                                    textForServices,specializations,servicesForPatients}) => {
+                                    textForServices,specializations,servicesForPatients,doctors}) => {
     return (
         <HospitalDepartmentCartWrapper>
             <HeaderCart title={title} headerLinks={headerLinks}/>
@@ -20,6 +21,7 @@ const HospitalDepartmentCart = ({children,title,headerLinks,asideBg,headCard,hea
                                 specializations={specializations}
                                 servicesForPatients={servicesForPatients}
             />
+            {doctors.length ? <DepartmentDoctors doctors={doctors}/> : null}
         </HospitalDepartmentCartWrapper>
     );
 };

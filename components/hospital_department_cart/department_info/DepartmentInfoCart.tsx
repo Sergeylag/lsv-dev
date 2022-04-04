@@ -4,7 +4,6 @@ import DepartmentContact from "./brief/DepartmentContact";
 import DepartmentMedia from "./brief/DepartmentMedia";
 import DepartmentAbout from "./about/DepartmentAbout";
 import ServicesSpecializations from "./about/ServicesSpecializations";
-import ListOfEmployees from "./ListOfEmployees";
 import ServicesForPatients from "./about/ServicesForPatients";
 
 const DepartmentInfoCart = ({headCard,headContact,about,services,textForServices,specializations,
@@ -23,7 +22,6 @@ const DepartmentInfoCart = ({headCard,headContact,about,services,textForServices
                 {specializations.active ? <ServicesSpecializations servicesList={specializations}/> : null}
                 {servicesForPatients.active ? <ServicesForPatients services={servicesForPatients}/> : null}
             </section>
-            <ListOfEmployees/>
         </section>
     );
 };
