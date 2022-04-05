@@ -4,9 +4,10 @@ import HeaderCart from "./HeaderCart";
 import AsideCart from "./AsideCart";
 import DepartmentInfoCart from "./department_info/DepartmentInfoCart";
 import DepartmentDoctors from "./department_info/DepartmentDoctors";
+import DepartmentTestimonials from "./department_info/DepartmentTestimonials";
 
 const HospitalDepartmentCart = ({children,title,headerLinks,asideBg,headCard,headContact,about,services,
-                                    textForServices,specializations,servicesForPatients,doctors}) => {
+                                    textForServices,specializations,servicesForPatients,doctors,testimonials}) => {
     return (
         <HospitalDepartmentCartWrapper>
             <HeaderCart title={title} headerLinks={headerLinks}/>
@@ -22,6 +23,7 @@ const HospitalDepartmentCart = ({children,title,headerLinks,asideBg,headCard,hea
                                 servicesForPatients={servicesForPatients}
             />
             {doctors.length ? <DepartmentDoctors doctors={doctors}/> : null}
+            {testimonials.length ? <DepartmentTestimonials testimonials={testimonials}/> : null}
         </HospitalDepartmentCartWrapper>
     );
 };

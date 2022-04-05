@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import buttonLeft from '../public/img/carousel-left.svg'
+import buttonRight from '../public/img/carousel-right.svg'
 
 export const HospitalDepartmentCartWrapper = styled.article`
   //padding-left: var(--spacer-xs);
@@ -434,6 +436,108 @@ export const HospitalDepartmentCartWrapper = styled.article`
                   font-weight: bold
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+  .department-testimonials{
+    border-top: 0.1rem dotted var(--main-color-b-1);
+    margin: var(--spacer-m) 0 0 0;
+    padding: var(--spacer-m) var(--spacer-s) 0;
+    h2{
+      font-size: var(--font-size-xl);
+      line-height: 1.167;
+      font-family: var(--font-family-heading);
+      margin: 0 0 var(--spacer-m) 0;
+    }
+    .actions{
+      margin-top: var(--spacer-m);
+      text-align: center;
+      a{
+        border: none;
+        padding: var(--spacer-xs) var(--spacer-s);
+        background: var(--button-secondary-bg);
+        color: var(--button-secondary-color);
+        border-radius: 0.4rem;
+        cursor: pointer;
+        font-family: var(--font-family-main);
+        font-size: inherit;
+        display: inline-block;
+        margin: 0;
+        text-align: center;
+        text-decoration: none;
+        transition: .25s;
+        &:hover{
+          background: var(--button-secondary-bg-hover);
+          border-color: var(--button-secondary-bg-hover);
+          color: var(--button-secondary-color-hover);
+          text-decoration: none;
+        }
+      }
+    }
+    .testimonials__carousel{
+      position: relative;
+      .carousel-button {
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+        background-color: transparent;
+        background-size: contain;
+        box-shadow: none;
+        height: 3.8rem;
+        opacity: .5;
+        padding: 0;
+        width: 1.8rem;
+        border: none;
+        //border-radius: 30%;
+        cursor: pointer;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        transition: .25s;
+        z-index: 4;
+        &:hover{
+          background-color: transparent;
+          box-shadow: none;
+          opacity: 1;
+        }
+      }
+      .prev{
+        background: url("${buttonLeft.src}") no-repeat center;
+        left: auto;
+        right: 100%;
+      }
+      .next{
+        background: url("${buttonRight.src}") no-repeat center;
+        left: 100%;
+        right: auto;
+      }
+      ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        li{
+          flex: none;
+          margin: 1rem;
+          padding: 0;
+          transition: .25s;
+          width: 50%;
+          .name{
+            padding-top: 1rem;
+            font-weight: bold;
+          }
+          a {
+            text-decoration: underline;
+            color: var(--link-color);
+            transition: color .125s;
+
+            &:hover {
+              color: var(--link-color-hover);
+              text-decoration: underline;
             }
           }
         }

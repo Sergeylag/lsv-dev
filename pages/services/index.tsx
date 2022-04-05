@@ -15,7 +15,8 @@ import {
     textForServices,
     specializations,
     servicesForPatients,
-    doctors
+    doctors,
+    testimonials
 } from "../../components/services/services_info_list";
 
 
@@ -35,6 +36,7 @@ const Services = () => {
                 specializations={specializations}
                 servicesForPatients={servicesForPatients}
                 doctors={doctors}
+                testimonials={testimonials}
             >
                 <ServicesAside/>
             </HospitalDepartmentCart>
