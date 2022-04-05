@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const AsideCart = ({children,bg}) => {
     const AsiedBg = styled.aside`
-    background-image: url("${bg}");
+    background: url("${bg}") no-repeat center/cover;
     `;
 
     return (

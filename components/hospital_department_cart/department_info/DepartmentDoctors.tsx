@@ -1,7 +1,6 @@
 import React from 'react';
 
 const DepartmentDoctors = ({doctors}) => {
-    console.log(doctors)
     return (
         <section className='department-doctors'>
             <h2>Сотрудники отделения</h2>

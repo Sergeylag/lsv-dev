@@ -77,29 +77,311 @@ export const HospitalDepartmentCartWrapper = styled.article`
           color: var(--button-ghost-color-hover);
           text-decoration: none;
         }
+      }
 
+      h3 {
+        color: var(--main-color-b-3);
+        font-size: var(--font-size-xl);
+        font-family: var(--font-family-heading);
+        margin: 0;
+      }
+
+      ul {
+        column-count: 2;
+        column-gap: var(--spacer-m);
+        line-height: calc(15 / 8);
+        margin: var(--spacer-s) 0;
+        padding: 0 0 0 var(--spacer-m);
       }
     }
   }
+}
 
-  .department-info {
-    display: grid;
-    gap: var(--spacer-m);
-    grid-template-columns: 34rem calc(100% - 32rem - var(--spacer-m));
+.department-info {
+  display: grid;
+  gap: var(--spacer-m);
+  grid-template-columns: 34rem calc(100% - 32rem - var(--spacer-m));
 
-    .department-brief {
-      --figure-size: 16rem;
+  .department-brief {
+    --figure-size: 16rem;
 
-      header {
-        h2 {
-          margin: 0 0 var(--spacer-m) 0;
-          font-size: var(--font-size-xl);
-          line-height: 1.167;
-          font-family: var(--font-family-heading);
+    header {
+      h2 {
+        margin: 0 0 var(--spacer-m) 0;
+        font-size: var(--font-size-xl);
+        line-height: 1.167;
+        font-family: var(--font-family-heading);
+      }
+
+      .doctor-image {
+        margin: var(--spacer-m) auto;
+
+        .image {
+          aspect-ratio: 1;
+          display: flex;
+          position: relative;
+          width: var(--figure-size, 30rem);
+
+          img {
+            border-radius: 50%;
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+          }
         }
 
-        .doctor-image {
-          margin: var(--spacer-m) auto;
+        figcaption {
+          margin-top: var(--spacer-m);
+
+          .name {
+            font-weight: 700;
+            margin-bottom: var(--spacer-xxs);
+
+            a {
+              color: inherit;
+              text-decoration: none;
+              transition: color .125s;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .department-contact {
+      h3 {
+        font-family: var(--font-family-heading);
+        margin: 0;
+      }
+
+      ul {
+        list-style: none;
+        margin: var(--spacer-xs) 0;
+        padding: 0;
+
+        li {
+          a {
+            text-decoration: underline;
+            color: var(--link-color);
+            transition: color .125s;
+
+            &:hover {
+              color: var(--link-color-hover);
+              text-decoration: underline;
+            }
+          }
+
+          a[href^=tel]:not(:focus) {
+            text-decoration: none;
+          }
+
+          a[href^=tel] {
+            color: inherit;
+          }
+        }
+      }
+
+      .actions {
+        margin-top: var(--spacer-m);
+
+        .button-secondary {
+          border: none;
+          background: var(--button-secondary-bg);
+          color: var(--button-secondary-color);
+
+          &:hover {
+            background: var(--button-secondary-bg-hover);
+            border-color: var(--button-secondary-bg-hover);
+            color: var(--button-secondary-color-hover);
+          }
+        }
+
+        .button {
+          padding: var(--spacer-xs) var(--spacer-s);
+          border-radius: 0.4rem;
+          cursor: pointer;
+          font-family: var(--font-family-main);
+          font-size: inherit;
+          display: inline-block;
+          margin: 0;
+          text-align: center;
+          text-decoration: none;
+          transition: .25s;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        ul {
+          list-style: none;
+          margin: var(--spacer-xs) 0;
+          padding: 0;
+
+          li {
+            //background: no-repeat center left / 4rem auto;
+            //margin: 0;
+            //padding: var(--spacer-m) 0 var(--spacer-m) 4.8rem;
+            a {
+              text-decoration: underline;
+              color: var(--link-color);
+              transition: color .125s;
+              padding-left: 1rem;
+            }
+
+            p {
+              border-left: var(--border-highlight);
+              padding-left: var(--spacer-s);
+              line-height: 1.286;
+            }
+          }
+        }
+      }
+    }
+
+    .department-media {
+      padding-left: var(--spacer-s);
+      padding-right: var(--spacer-s);
+      border-top: 0.1rem dotted var(--main-color-b-1);
+      margin: var(--spacer-m) auto 0;
+      //padding: var(--spacer-m) 0 0;
+    }
+  }
+
+  .department-about {
+    p {
+      line-height: 1.875;
+    }
+
+    .services__specializations {
+      border-top: var(--border-intersection);
+      margin-top: var(--spacer-m);
+      padding-top: var(--spacer-m);
+
+      h2 {
+        margin: 0 0 var(--spacer-m) 0;
+        font-size: var(--font-size-xl);
+        line-height: 1.167;
+        font-family: var(--font-family-heading);
+      }
+
+      h3 {
+        color: var(--main-color-b-1);
+      }
+
+      ul {
+        border-left: var(--spacer-xs) solid var(--main-color-b-4);
+        margin-left: var(--spacer-m);
+        padding-left: var(--spacer-m);
+
+        li {
+          line-height: 1.875;
+
+          p {
+            margin: 0;
+          }
+
+          a {
+            text-decoration: underline;
+            color: var(--link-color);
+            transition: color .125s;
+
+            &:hover {
+              color: var(--link-color-hover);
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .services__for-patients {
+      border-top: var(--border-intersection);
+      margin-top: var(--spacer-m);
+      padding-top: var(--spacer-m);
+
+      h2 {
+        margin: 0 0 var(--spacer-m) 0;
+        font-size: var(--font-size-xl);
+        line-height: 1.167;
+        font-family: var(--font-family-heading);
+      }
+
+      ul {
+        display: grid;
+        gap: var(--spacer-m);
+        grid-template-columns: 1fr 1fr 1fr;
+        list-style: none;
+        margin: var(--spacer-m) auto;
+        padding: 0;
+
+        li {
+          line-height: calc(18.75 / 16);
+
+          figure {
+            margin: 0;
+            cursor: pointer;
+
+            .image {
+              height: 4rem;
+              width: 4rem;
+
+              img {
+                height: 100%;
+                object-fit: contain;
+                width: 100%;
+              }
+            }
+
+            figcaption {
+              a {
+                text-decoration: underline;
+                color: var(--link-color);
+                transition: color .125s;
+
+                &:hover {
+                  color: var(--link-color-hover);
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// end department-info
+.department-doctors {
+  h2 {
+    font-size: var(--font-size-xl);
+    line-height: 1.167;
+    font-family: var(--font-family-heading);
+    margin: 0;
+  }
+
+  ul {
+    --card-size: 16rem;
+    --figure-size: 100%;
+    display: grid;
+    gap: var(--spacer-m) var(--spacer-s);
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    list-style: none;
+    padding: 0;
+
+    li {
+      .doctor-preview {
+        height: 100%;
+
+        figure {
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
 
           .image {
             aspect-ratio: 1;
@@ -116,281 +398,40 @@ export const HospitalDepartmentCartWrapper = styled.article`
           }
 
           figcaption {
-            margin-top: var(--spacer-m);
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 0 var(--spacer-xxs);
 
             .name {
               font-weight: 700;
-              margin-bottom: var(--spacer-xxs);
+              margin: var(--spacer-m) 0 var(--spacer-s);
 
               a {
                 color: inherit;
                 text-decoration: none;
                 transition: color .125s;
-              }
-            }
-          }
-        }
-      }
 
-      .department-contact {
-        h3 {
-          font-family: var(--font-family-heading);
-          margin: 0;
-        }
-
-        ul {
-          list-style: none;
-          margin: var(--spacer-xs) 0;
-          padding: 0;
-
-          li {
-            a {
-              text-decoration: underline;
-              color: var(--link-color);
-              transition: color .125s;
-
-              &:hover {
-                color: var(--link-color-hover);
-                text-decoration: underline;
-              }
-            }
-
-            a[href^=tel]:not(:focus) {
-              text-decoration: none;
-            }
-
-            a[href^=tel] {
-              color: inherit;
-            }
-          }
-        }
-
-        .actions {
-          margin-top: var(--spacer-m);
-
-          .button-secondary {
-            border: none;
-            background: var(--button-secondary-bg);
-            color: var(--button-secondary-color);
-
-            &:hover {
-              background: var(--button-secondary-bg-hover);
-              border-color: var(--button-secondary-bg-hover);
-              color: var(--button-secondary-color-hover);
-            }
-          }
-
-          .button {
-            padding: var(--spacer-xs) var(--spacer-s);
-            border-radius: 0.4rem;
-            cursor: pointer;
-            font-family: var(--font-family-main);
-            font-size: inherit;
-            display: inline-block;
-            margin: 0;
-            text-align: center;
-            text-decoration: none;
-            transition: .25s;
-
-            &:hover {
-              text-decoration: none;
-            }
-          }
-
-          ul {
-            list-style: none;
-            margin: var(--spacer-xs) 0;
-            padding: 0;
-
-            li {
-              //background: no-repeat center left / 4rem auto;
-              //margin: 0;
-              //padding: var(--spacer-m) 0 var(--spacer-m) 4.8rem;
-              a {
-                text-decoration: underline;
-                color: var(--link-color);
-                transition: color .125s;
-                padding-left: 1rem;
-              }
-
-              p {
-                border-left: var(--border-highlight);
-                padding-left: var(--spacer-s);
-                line-height: 1.286;
-              }
-            }
-          }
-        }
-      }
-
-      .department-media {
-        padding-left: var(--spacer-s);
-        padding-right: var(--spacer-s);
-        border-top: 0.1rem dotted var(--main-color-b-1);
-        margin: var(--spacer-m) auto 0;
-        //padding: var(--spacer-m) 0 0;
-      }
-    }
-
-    .department-about {
-      p {
-        line-height: 1.875;
-      }
-
-      .services__specializations {
-        border-top: var(--border-intersection);
-        margin-top: var(--spacer-m);
-        padding-top: var(--spacer-m);
-
-        h2 {
-          margin: 0 0 var(--spacer-m) 0;
-          font-size: var(--font-size-xl);
-          line-height: 1.167;
-          font-family: var(--font-family-heading);
-        }
-
-        h3 {
-          color: var(--main-color-b-1);
-        }
-
-        ul {
-          border-left: var(--spacer-xs) solid var(--main-color-b-4);
-          margin-left: var(--spacer-m);
-          padding-left: var(--spacer-m);
-
-          li {
-            line-height: 1.875;
-
-            p {
-              margin: 0;
-            }
-
-            a {
-              text-decoration: underline;
-              color: var(--link-color);
-              transition: color .125s;
-              &:hover{
-                color: var(--link-color-hover);
-                text-decoration: underline;
-              }
-            }
-          }
-        }
-      }
-
-      .services__for-patients {
-        border-top: var(--border-intersection);
-        margin-top: var(--spacer-m);
-        padding-top: var(--spacer-m);
-        h2{
-          margin: 0 0 var(--spacer-m) 0;
-          font-size: var(--font-size-xl);
-          line-height: 1.167;
-          font-family: var(--font-family-heading);
-        }
-        ul{
-          display: grid;
-          gap: var(--spacer-m);
-          grid-template-columns: 1fr 1fr 1fr;
-          list-style: none;
-          margin: var(--spacer-m) auto;
-          padding: 0;
-          li{
-            line-height: calc(18.75 / 16);
-            figure{
-              margin: 0;
-              cursor: pointer;
-              .image{
-                height: 4rem;
-                width: 4rem;
-                img{
-                  height: 100%;
-                  object-fit: contain;
-                  width: 100%;
-                }
-              }
-              figcaption{
-                a{
+                &:hover {
                   text-decoration: underline;
-                  color: var(--link-color);
-                  transition: color .125s;
-                  &:hover{
-                    color: var(--link-color-hover);
-                    text-decoration: underline;
-                  }
                 }
               }
             }
-          }
-        }
-      }
-    }
-  } // end department-info
-  .department-doctors{
-    h2{
-      font-size: var(--font-size-xl);
-      line-height: 1.167;
-      font-family: var(--font-family-heading);
-      margin: 0;
-    }
-    ul{
-      --card-size: 16rem;
-      --figure-size: 100%;
-      display: grid;
-      gap: var(--spacer-m) var(--spacer-s);
-      grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-      list-style: none;
-      padding: 0;
-      li{
-        .doctor-preview{
-          height: 100%;
-          figure{
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            .image{
-              aspect-ratio: 1;
-              display: flex;
-              position: relative;
-              width: var(--figure-size, 30rem);
-              img{
-                border-radius: 50%;
-                height: 100%;
-                object-fit: cover;
-                width: 100%;
-              }
+
+            .position {
+              font-size: var(--font-size-normal);
+              font-weight: 200;
+              line-height: 1.286;
             }
-            figcaption{
-              display: flex;
-              flex: 1;
-              flex-direction: column;
-              padding: 0 var(--spacer-xxs);
-              .name{
-                font-weight: 700;
-                margin: var(--spacer-m) 0 var(--spacer-s);
-                a{
-                  color: inherit;
-                  text-decoration: none;
-                  transition: color .125s;
-                  &:hover{
-                    text-decoration: underline;
-                  }
-                }
-              }
-              .position{
-                font-size: var(--font-size-normal);
-                font-weight: 200;
-                line-height: 1.286;
-              }
-              .qualification{
-                padding: var(--spacer-xs);
-                text-align: left;
-              }
-              .experience{
-                span{
-                  font-weight: bold
-                }
+
+            .qualification {
+              padding: var(--spacer-xs);
+              text-align: left;
+            }
+
+            .experience {
+              span {
+                font-weight: bold
               }
             }
           }
@@ -398,5 +439,6 @@ export const HospitalDepartmentCartWrapper = styled.article`
       }
     }
   }
-  
+
+
 `;
