@@ -7,13 +7,14 @@ import ServicesSpecializations from "./about/ServicesSpecializations";
 import ServicesForPatients from "./about/ServicesForPatients";
 
 const DepartmentInfoCart = ({headCard,headContact,about,services,textForServices,specializations,
-                                servicesForPatients}) => {
+                                servicesForPatients,media}) => {
     return (
         <section className='department-info'>
             <section className='department-brief'>
                 <DepartmentHeadCard headCard={headCard}/>
                 <DepartmentContact headContact={headContact}/>
-                <DepartmentMedia/>
+                {media.length ? <DepartmentMedia media={media}/> : null}
+
             </section>
             <section className='department-about'>
                 {about.length != 0 ? <DepartmentAbout list={about}/> : null}

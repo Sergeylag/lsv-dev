@@ -1,5 +1,4 @@
 import React from 'react';
-import Plug from "../../components/Plug";
 import {CdcMain} from "../../styles/cdc/cdc";
 import CdcNavigation from "../../components/cdc/CdcNavigation";
 import HospitalDepartmentCart from "../../components/hospital_department_cart/HospitalDepartmentCart";
@@ -16,7 +15,8 @@ import {
     specializations,
     servicesForPatients,
     doctors,
-    testimonials
+    testimonials,
+    media
 } from "../../components/cdc/cdc_info_list";
 
 const Cdc = () => {
@@ -36,10 +36,10 @@ const Cdc = () => {
                 servicesForPatients={servicesForPatients}
                 doctors={doctors}
                 testimonials={testimonials}
+                media={media}
             >
                 <CdcAside/>
             </HospitalDepartmentCart>
-            <Plug/>
         </CdcMain>
     );
 };

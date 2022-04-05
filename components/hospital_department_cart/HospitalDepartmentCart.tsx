@@ -7,7 +7,7 @@ import DepartmentDoctors from "./department_info/DepartmentDoctors";
 import DepartmentTestimonials from "./department_info/DepartmentTestimonials";
 
 const HospitalDepartmentCart = ({children,title,headerLinks,asideBg,headCard,headContact,about,services,
-                                    textForServices,specializations,servicesForPatients,doctors,testimonials}) => {
+                                    textForServices,specializations,servicesForPatients,doctors,testimonials,media}) => {
     return (
         <HospitalDepartmentCartWrapper>
             <HeaderCart title={title} headerLinks={headerLinks}/>
@@ -21,6 +21,7 @@ const HospitalDepartmentCart = ({children,title,headerLinks,asideBg,headCard,hea
                                 textForServices={textForServices}
                                 specializations={specializations}
                                 servicesForPatients={servicesForPatients}
+                                media={media}
             />
             {doctors.length ? <DepartmentDoctors doctors={doctors}/> : null}
             {testimonials.length ? <DepartmentTestimonials testimonials={testimonials}/> : null}

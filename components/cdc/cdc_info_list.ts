@@ -4,6 +4,12 @@ import buildings from '../../public/img/cdc/services/buildings.svg'
 import notes from '../../public/img/cdc/services/notes.svg'
 import schedule from '../../public/img/cdc/schedule.svg'
 import prodoctorov from '../../public/img/cdc/review/prodoctorov.svg'
+import s01 from '../../public/img/cdc/media/s01.jpg'
+import s02 from '../../public/img/cdc/media/s02.jpg'
+import s03 from '../../public/img/cdc/media/s03.jpg'
+import s04 from '../../public/img/cdc/media/s04.jpg'
+import s05 from '../../public/img/cdc/media/s05.jpg'
+import s06 from '../../public/img/cdc/media/s06.jpg'
 
 export const headerTitle = 'Консультативно-диагностический центр'
 
@@ -100,4 +106,14 @@ export const testimonials = [
     {src:prodoctorov.src, title:'Сергей Викторович', text:'В больницу попала по направлению на консультацию, а затем на' +
             ' операцию. Врач Мишустин Александр Михайлович всё подробно объяснил, помог настроиться морально. Очень…',
         link:'#'},
+]
+
+export const media = [
+    {item:'iframe', src:'//www.youtube.com/embed/2u_IJOtE6nQ' },
+    {item:'img', src:s01.src },
+    {item:'img', src:s02.src },
+    {item:'img', src:s03.src },
+    {item:'img', src:s04.src },
+    {item:'img', src:s05.src },
+    {item:'img', src:s06.src },
 ]

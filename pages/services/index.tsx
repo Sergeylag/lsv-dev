@@ -1,5 +1,4 @@
 import React from 'react';
-import Plug from "../../components/Plug";
 import {ServicesMain} from "../../styles/services/services";
 import ServicesNavigation from "../../components/services/ServicesNavigation";
 import HospitalDepartmentCart from "../../components/hospital_department_cart/HospitalDepartmentCart";
@@ -16,7 +15,8 @@ import {
     specializations,
     servicesForPatients,
     doctors,
-    testimonials
+    testimonials,
+    media
 } from "../../components/services/services_info_list";
 
 
@@ -37,10 +37,10 @@ const Services = () => {
                 servicesForPatients={servicesForPatients}
                 doctors={doctors}
                 testimonials={testimonials}
+                media={media}
             >
                 <ServicesAside/>
             </HospitalDepartmentCart>
-            <Plug/>
         </ServicesMain>
     );
 };

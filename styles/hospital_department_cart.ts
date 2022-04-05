@@ -243,13 +243,94 @@ export const HospitalDepartmentCartWrapper = styled.article`
           }
         }
       }
-
+      
       .department-media {
-        padding-left: var(--spacer-s);
-        padding-right: var(--spacer-s);
         border-top: 0.1rem dotted var(--main-color-b-1);
         margin: var(--spacer-m) auto 0;
-        //padding: var(--spacer-m) 0 0;
+        padding: var(--spacer-m) 0 0;
+        h2{
+          font-size: var(--font-size-xl);
+          line-height: 1.167;
+          font-family: var(--font-family-heading);
+          margin: 0 0 var(--spacer-m) 0;
+        }
+        .department-gallery{
+          position: relative;
+          .carousel-button {
+            -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+            background-color: transparent;
+            background-size: contain;
+            box-shadow: none;
+            height: 3.8rem;
+            opacity: .5;
+            padding: 0;
+            width: 1.8rem;
+            border: none;
+            //border-radius: 30%;
+            cursor: pointer;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            transition: .25s;
+            z-index: 4;
+            &:hover{
+              background-color: transparent;
+              box-shadow: none;
+              opacity: 1;
+            }
+          }
+          .prev{
+            background: url("${buttonLeft.src}") no-repeat center;
+            left: auto;
+            right: 100%;
+          }
+          .next{
+            background: url("${buttonRight.src}") no-repeat center;
+            left: 100%;
+            right: auto;
+          }
+          ul{
+            list-style: none;
+            margin: var(--spacer-xs) 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            li:not(:last-of-type){
+              margin: 0 0 var(--spacer-s);
+            }
+            li{
+              padding: var(--spacer-xs);
+              width: 100%;
+              flex: none;
+              transition: .25s;
+              figure{
+                align-items: center;
+                aspect-ratio: 16/9;
+                background: linear-gradient(to bottom right, var(--main-color-a-shade), var(--main-color-b-shade));
+                box-shadow: var(--block-shadow);
+                display: flex;
+                margin: 0;
+                img{
+                  height: 100%;
+                  object-fit: contain;
+                  width: 100%;
+                }
+              }
+              .proportional-container {
+                overflow: hidden;
+                padding: 0;
+                position: relative;
+                iframe{
+                  height: 100%;
+                  object-fit: contain;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
       }
     }
 
