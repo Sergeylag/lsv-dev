@@ -14,7 +14,8 @@ const DepartmentContact = ({headContact}) => {
             </ul>
 
             <div className="actions">
-                <a className="button button-secondary" href={btnHref}>Записаться на приём</a>
+                {btnHref ? <a className="button button-secondary" href={btnHref}>Записаться на приём</a> : null}
+                {/*<a className="button button-secondary" href={btnHref}>Записаться на приём</a>*/}
                 {/*<p className="notice">*/}
                 {/*    вам потребуется скан направления из поликлиники*/}
                 {/*</p>*/}

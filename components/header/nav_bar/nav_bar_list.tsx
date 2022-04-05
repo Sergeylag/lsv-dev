@@ -42,7 +42,7 @@ export const NavBarList = [
             // {id:53, title: 'Прайс-лист', path:'#', ul:[]},
             // {id:54, title: 'Контакты', path:'#', ul:[]},
         ]},
-    {id: 6, title: 'Пресс-центр', path: '#', ul: [
+    {id: 6, title: 'Пресс-центр', path: '/press', ul: [
             // {id:61, title: 'Информация для журналистов и СМИ', path:'/press', ul:[]},
             // {id:62, title: 'Новости больницы', path:'/press/news', ul:[]},
             // {id:63, title: 'СМИ о нас', path:'/press/media', ul:[]},

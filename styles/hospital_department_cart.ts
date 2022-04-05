@@ -48,6 +48,12 @@ export const HospitalDepartmentCartWrapper = styled.article`
           font-size: var(--font-size-xl);
         }
       }
+      
+      .title{
+        color: var(--text-color-inverted-primary);
+        font-size: var(--font-size-xl);
+        padding-bottom: 3rem;
+      }
 
       .address {
         color: var(--text-color-inverted-primary);
