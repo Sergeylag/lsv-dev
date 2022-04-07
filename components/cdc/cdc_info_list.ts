@@ -117,3 +117,8 @@ export const media = [
     {item:'img', src:s05.src },
     {item:'img', src:s06.src },
 ]
+
+export const expandingList = {
+    active: false,
+    list: []
+}

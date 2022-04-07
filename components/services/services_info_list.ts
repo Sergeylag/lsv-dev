@@ -103,3 +103,8 @@ export const testimonials = [
 ]
 
 export const media = []
+
+export const expandingList = {
+    active: false,
+    list: []
+}

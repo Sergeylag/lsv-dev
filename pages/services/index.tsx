@@ -16,7 +16,8 @@ import {
     servicesForPatients,
     doctors,
     testimonials,
-    media
+    media,
+    expandingList
 } from "../../components/services/services_info_list";
 
 
@@ -38,6 +39,7 @@ const Services = () => {
                 doctors={doctors}
                 testimonials={testimonials}
                 media={media}
+                expandingList={expandingList}
             >
                 <ServicesAside/>
             </HospitalDepartmentCart>

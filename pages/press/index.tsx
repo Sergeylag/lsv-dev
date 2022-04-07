@@ -16,7 +16,8 @@ import {
     servicesForPatients,
     doctors,
     testimonials,
-    media
+    media,
+    expandingList
 } from "../../components/press/press_info_list";
 
 const Press = () => {
@@ -37,6 +38,7 @@ const Press = () => {
                 doctors={doctors}
                 testimonials={testimonials}
                 media={media}
+                expandingList={expandingList}
             >
                 <PressAside/>
             </HospitalDepartmentCart>

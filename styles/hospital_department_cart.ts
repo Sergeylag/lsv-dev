@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import buttonLeft from '../public/img/carousel-left.svg'
 import buttonRight from '../public/img/carousel-right.svg'
+import expandingDown from '../public/img/expanding/down.svg'
+import expandingClose from '../public/img/expanding/close.svg'
 
 export const HospitalDepartmentCartWrapper = styled.article`
   //padding-left: var(--spacer-xs);
@@ -438,6 +440,48 @@ export const HospitalDepartmentCartWrapper = styled.article`
                 }
               }
             }
+          }
+        }
+      }
+      .expanding-list{
+        border-top: var(--border-intersection);
+        margin-top: var(--spacer-m);
+        padding-top: var(--spacer-m);
+        details{
+          background: var(--bg-secondary);
+          border-radius: 0.2rem;
+          box-shadow: var(--block-shadow-card);
+          margin: var(--spacer-m) 0;
+          padding: var(--spacer-s);
+          position: relative;
+          ::before{
+            content: '?';
+            transform: translateY(-0.2rem);
+            color: var(--text-color-inverted-secondary);
+            display: block;
+            font: 700 var(--font-size-xxl) var(--font-family-heading);
+            height: 4.5rem;
+            left: var(--spacer-s);
+            line-height: 1;
+            pointer-events: none;
+            position: absolute;
+            top: var(--spacer-s);
+            width: 3.6rem;
+            z-index: 2;
+          }
+          summary{
+            min-height: 4.8rem;
+            background: url("${expandingDown.src}") no-repeat top right;
+            cursor: pointer;
+            font: 500 2rem var(--font-family-main);
+            list-style: none;
+            padding: 0 0 0 4rem;
+          }
+        }
+        details[open] {
+          box-shadow: var(--block-shadow-card-hover);
+          summary{
+            background-image: url("${expandingClose.src}");
           }
         }
       }

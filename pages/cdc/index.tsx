@@ -16,7 +16,8 @@ import {
     servicesForPatients,
     doctors,
     testimonials,
-    media
+    media,
+    expandingList
 } from "../../components/cdc/cdc_info_list";
 
 const Cdc = () => {
@@ -37,6 +38,7 @@ const Cdc = () => {
                 doctors={doctors}
                 testimonials={testimonials}
                 media={media}
+                expandingList={expandingList}
             >
                 <CdcAside/>
             </HospitalDepartmentCart>
