@@ -83,7 +83,8 @@ export const specializations = {
 
 export const servicesForPatients = {
     active:true, headText:'Информация для пациентов', list:[
-        {src:notes.src, link:'/patients/research', textLink:'Порядок оказания платных услуг'},
+        // {src:notes.src, link:'/patients/research', textLink:'Порядок оказания платных услуг'},
+        {src:notes.src, link:'/_next/static/pdf/p1.pdf', textLink:'Порядок оказания платных услуг'},
         {src:shield.src, link:'/patients/health-capital', textLink:'Добровольное медицинское страхование'},
         {src:wallet.src, link:'#', textLink:'Налоговый вычет'},
     ]
