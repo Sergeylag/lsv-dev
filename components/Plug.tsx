@@ -13,6 +13,7 @@ export default function Plug() {
     return (
         <PlugContent>
             <Heading tag='' text={text}/>
+            <embed src="/pdf/p1.pdf" width="100%" height="100%" />
         </PlugContent>
     );
 };

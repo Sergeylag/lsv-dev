@@ -1,12 +1,12 @@
 import noFoto from '../../public/img/NoFoto.png'
 import zav from '../../public/img/services/kda-zav.jpg'
-
 import notes from '../../public/img/services/notes.svg'
 import shield from '../../public/img/services/shield.svg'
 import wallet from '../../public/img/services/wallet.svg'
 import phone from '../../public/img/services/phone.svg'
 import invoice from '../../public/img/services/invoice.svg'
-import prodoctorov from "../../public/img/cdc/review/prodoctorov.svg";
+import prodoctorov from "../../public/img/cdc/review/prodoctorov.svg"
+
 
 export const headerTitle = 'Отделение платных медицинских услуг'
 
@@ -57,17 +57,27 @@ export const textForServices = [// блок не отрендерится есл
 ]
 
 export const specializations = {
-    active: true, headTag: 'h2', bodyTag: 'a', headText: 'Направления работы', list: [
-        {link: '#', text: 'Диагностика'},
-        {link: '#', text: 'Урология'},
-        {link: '#', text: 'Урогинекология'},
-        {link: '#', text: 'Гинекология'},
-        {link: '#', text: 'Эстетическая гинекология'},
-        {link: '#', text: 'Оториноларингология'},
-        {link: '#', text: 'Стационар'},
-        {link: '#', text: 'Родильный дом'},
-        {link: '#', text: 'Анализы'},
-        {link: '#', text: 'Хирургия'},
+    active: true, headTag: 'h2', bodyTag: 'li', headText: 'Направления работы', list: [ // bodyTag: 'a' - установил li ибо страницы еще не созданы
+        'Диагностика',
+        'Урология',
+        'Урогинекология',
+        'Гинекология',
+        'Эстетическая гинекология',
+        'Оториноларингология',
+        'Стационар',
+        'Родильный дом',
+        'Анализы',
+        'Хирургия'
+        // {link: '#', text: 'Диагностика'},
+        // {link: '#', text: 'Урология'},
+        // {link: '#', text: 'Урогинекология'},
+        // {link: '#', text: 'Гинекология'},
+        // {link: '#', text: 'Эстетическая гинекология'},
+        // {link: '#', text: 'Оториноларингология'},
+        // {link: '#', text: 'Стационар'},
+        // {link: '#', text: 'Родильный дом'},
+        // {link: '#', text: 'Анализы'},
+        // {link: '#', text: 'Хирургия'},
     ]
 }
 
