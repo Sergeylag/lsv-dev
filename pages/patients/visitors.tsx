@@ -1,9 +1,9 @@
 import React from 'react';
-import Plug from "../../components/Plug";
+import PlugVisitors from "../../components/patients/plug_pages/PlugVisitors";
 
 const Visitors = () => {
     return (
-        <Plug/>
+        <PlugVisitors/>
     );
 };
 
