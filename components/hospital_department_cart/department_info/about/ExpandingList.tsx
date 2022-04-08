@@ -23,7 +23,7 @@ const ExpandingList = ({list}) => {
                                 )
                             }else if(e.tag == 'ul'){
                                 return (
-                                    <ul>
+                                    <ul key={id}>
                                         {e.list.map((e,id)=>{
                                             return(
                                                 <li key={id}>

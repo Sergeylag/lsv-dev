@@ -9,7 +9,6 @@ import ExpandingList from "./about/ExpandingList";
 
 const DepartmentInfoCart = ({headCard,headContact,about,services,textForServices,specializations,
                                 servicesForPatients,media,expandingList}) => {
-    console.log(expandingList)
     return (
         <section className='department-info'>
             <section className='department-brief'>
