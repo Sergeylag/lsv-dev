@@ -13,7 +13,7 @@ const PlugVisitors = () => {
                 <Link href='/'>
                     <a>Главная</a>
                 </Link>
-                <Link href='/'>
+                <Link href='/patients'>
                     <a>Пациентам</a>
                 </Link>
                 <span>Информация для посетителей</span>
