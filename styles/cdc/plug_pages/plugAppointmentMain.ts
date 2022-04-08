@@ -118,6 +118,11 @@ export const PlugAppointmentMain = styled.main`
                 border: 0.1rem solid var(--input-border);
                 font-size: var(--font-size-normal);
                 margin: 0;
+                &:focus{
+                  border-color: var(--input-border-focus);
+                  box-shadow: 0.1rem 0.1rem 0.2rem var(--input-border-focus);
+                  outline: none;
+                }
               }
             }
           }

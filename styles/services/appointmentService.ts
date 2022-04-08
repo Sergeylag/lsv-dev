@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import paperclip from '../../../public/img/main/chief/paperclip.svg'
-import checked from '../../../public/img/main/chief/checked.svg'
-
-export const ChiefContactMain = styled.main`
+import paperclip from '../../public/img/main/chief/paperclip.svg'
+import checked from '../../public/img/main/chief/checked.svg'
+export const AppointmentServicesMain = styled.main`
     .with-sidebar{
+
       display: grid;
       gap: var(--spacer-m);
       grid-auto-rows: auto;
@@ -14,7 +14,7 @@ export const ChiefContactMain = styled.main`
       margin-left: auto;
       margin-right: auto;
       max-width: var(--content-width);
-      .contact__chief{
+      article{
         margin: 0;
         max-width: var(--content-width);
         padding: var(--spacer-s) 0 var(--spacer-m);
@@ -58,7 +58,7 @@ export const ChiefContactMain = styled.main`
                 margin: var(--spacer-s) 0;
               }
               .title{
-                
+
               }
             }
           }
@@ -171,7 +171,7 @@ export const ChiefContactMain = styled.main`
               &:focus{
                 box-shadow: 0.2rem 0.2rem 0.2rem var(--input-border-focus);
               }
-              
+
             }
             input[type=checkbox]:checked {
               background: url("${checked.src}") no-repeat center/cover;

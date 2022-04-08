@@ -20,7 +20,7 @@ export const headCard = {
     position: 'Заведующий отделением',
     src: zav.src,
     fio: 'Кружко Денис Андреевич',
-    link: "/doctors/1"
+    link: "#"
 }
 
 export const headContact = {
@@ -28,10 +28,10 @@ export const headContact = {
         {href: 'tel:+74951977777', text: '+7 (495) 197-77-77'},
         {href: 'mailto:ovd-gkb50@yandex.ru', text: 'ovd-gkb50@yandex.ru'},
     ],
-    btnHref: '/services/appointment',
+    btnHref: '/services/appointmentService',
     action: [
         {tag: 'a', href: '#', text: 'Заказать обратный звонок', src:phone.src},
-        {tag: 'a', href: '#', text: 'Прайс-лист', src:invoice.src},
+        {tag: 'a', href: '/_next/static/pdf/Price.pdf', text: 'Прайс-лист', src:invoice.src},
         {tag: 'p', href: '#', text: 'В отделении принимается наличный и безналичный расчет.', src:'#'},
     ]
 }
