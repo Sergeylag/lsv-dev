@@ -102,6 +102,7 @@ export const MainTestimonials = styled.section`
               line-height: 1.286;
             }
           }
+          
           .link{
             a{
               display: block;
