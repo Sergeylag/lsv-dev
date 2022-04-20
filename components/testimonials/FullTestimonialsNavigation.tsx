@@ -8,8 +8,8 @@ const FullTestimonialsNavigation = ({id}) => {
             <Link href={`/`}>
                 <a>Главная</a>
             </Link>
-            <Link href={`/`}>
-                <a>Отзыв</a>
+            <Link href={`/testimonials`}>
+                <a>Отзывы</a>
             </Link>
             <span>№{id}</span>
         </Navigation>
