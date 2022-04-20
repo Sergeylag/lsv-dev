@@ -5,10 +5,10 @@ import Link from "next/link";
 const ChiefNavigation = () => {
     return (
         <Navigation>
-            <Link href='/'>
+            <Link href={`/`}>
                 <a>Главная</a>
             </Link>
-            <Link href='/contact'>
+            <Link href={`/contact`}>
                 <a>Контакты</a>
             </Link>
             <span>Написать главному врачу</span>

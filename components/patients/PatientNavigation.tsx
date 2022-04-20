@@ -5,7 +5,7 @@ import Navigation from "../Navigation";
 const PatientNavigation = () => {
     return (
         <Navigation>
-            <Link href='/'>
+            <Link href={`/`}>
                 <a>Главная</a>
             </Link>
             <span>Пациентам</span>

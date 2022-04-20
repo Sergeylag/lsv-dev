@@ -7,10 +7,10 @@ const PlugAppointment = () => {
     return (
         <PlugAppointmentMain>
             <Navigation>
-                <Link href='/'>
+                <Link href={`/`}>
                     <a>Главная</a>
                 </Link>
-                <Link href='/cdc'>
+                <Link href={`/cdc`}>
                     <a>КДЦ</a>
                 </Link>
                 <span>Предварительная запись</span>

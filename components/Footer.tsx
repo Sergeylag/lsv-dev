@@ -17,7 +17,7 @@ const Footer = () => {
         <Basement>
             <div className='content-wrapper'>
                 <figure className='logo'>
-                    <Link href='/'>
+                    <Link href={`/`}>
                         <a>
                             <Image alt='Городская клиническая больница им. С.И. Спасокукоцкого'
                                  src={logo.src} width={logo.height} height={logo.width}/>
@@ -38,12 +38,12 @@ const Footer = () => {
                 </div>
                 <div className='search'>
                     <p className='phone'>
-                        <Link href='tel:+74958703612'>
+                        <Link href={`tel:+74958703612`}>
                             <a>+7 (495) 870-36-12</a>
                         </Link>
                     </p>
                     <p>
-                        <Link href='#'>
+                        <Link href={`#`}>
                             <a>Карта сайта</a>
                         </Link>
                     </p>
@@ -55,7 +55,7 @@ const Footer = () => {
             </div>
             <div className='legal'>
                 <div className='content-wrapper'>
-                    <Link href='/privacy'>
+                    <Link href={`/privacy`}>
                         <a>Политика конфиденциальности</a>
                     </Link>
                 </div>

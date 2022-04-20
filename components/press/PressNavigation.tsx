@@ -5,7 +5,7 @@ import Link from "next/link";
 const PressNavigation = () => {
     return (
         <Navigation>
-            <Link href='/'>
+            <Link href={`/`}>
                 <a>Главная</a>
             </Link>
             <span>Пресс-центр</span>

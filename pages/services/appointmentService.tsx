@@ -7,10 +7,10 @@ const AppointmentService = () => {
     return (
         <AppointmentServicesMain>
             <Navigation>
-                <Link href='/'>
+                <Link href={`/`}>
                     <a>Главная</a>
                 </Link>
-                <Link href='/services'>
+                <Link href={`/services`}>
                     <a>Платные услуги</a>
                 </Link>
                 <span>Предварительная запись</span>

@@ -15,7 +15,7 @@ export default function Testimonials () {
                     })}
                 </ul>
                 <nav>
-                    <Link href='/testimonials'>
+                    <Link href={`/testimonials`}>
                         <a className='button button-secondary'>Все отзывы</a>
                     </Link>
                 </nav>

@@ -7,7 +7,7 @@ const DepartmentTestimonials = ({testimonials}) => {
             <h2>Отзывы об отделении</h2>
             <TestimonialsCarousel testimonials={testimonials}/>
             <div className="actions">
-                <Link href='#'>
+                <Link href={`#`}>
                     <a className="button button-secondary">оставить отзыв</a>
                 </Link>
             </div>

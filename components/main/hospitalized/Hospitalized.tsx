@@ -11,7 +11,7 @@ export default function Hospitalized () {
                     <img alt='' src={hospitalized.src} width={hospitalized.width} height={hospitalized.height}/>
                 </figure>
                 <p>{'Если ваш близкий '}
-                <Link href='/patients/visitors'>
+                <Link href={`/patients/visitors`}>
                     <a>госпитализирован к нам в больницу</a>
                 </Link>
                 </p>

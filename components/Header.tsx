@@ -30,7 +30,7 @@ export default function Header() {
                 <ImgGKB/>
                 <CallCenter/>
                 <ContactAddres/>
-                <Link href='/cdc/appointment' passHref>
+                <Link href={`/cdc/appointment`} passHref>
                     <Appoitment>Записаться на приём</Appoitment>
                 </Link>
             </Stripe2>

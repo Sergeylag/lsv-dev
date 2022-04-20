@@ -5,7 +5,7 @@ import Link from "next/link";
 const TestimonialsNavigation = () => {
     return (
         <Navigation>
-            <Link href='/'>
+            <Link href={`/`}>
                 <a>Главная</a>
             </Link>
             <span>Отзывы</span>

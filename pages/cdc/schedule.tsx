@@ -8,10 +8,10 @@ const Schedule = () => {
     return (
         <ScheduleMain>
             <Navigation>
-                <Link href='/'>
+                <Link href={`/`}>
                     <a>Главная</a>
                 </Link>
-                <Link href='/'>
+                <Link href={`/`}>
                     <a>КДЦ</a>
                 </Link>
                 <span>Расписание приёма и запись</span>

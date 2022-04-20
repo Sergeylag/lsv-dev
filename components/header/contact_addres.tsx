@@ -23,7 +23,7 @@ const ContactAddres = () => {
     return (
         <Addres>
             <div>127206, Москва, ул. Вучетича, 21</div>
-            <Link href='/contact'>
+            <Link href={`/contact`}>
                 <a>Схема проезда</a>
             </Link>
         </Addres>

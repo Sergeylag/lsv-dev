@@ -10,10 +10,10 @@ const PlugVisitors = () => {
     return (
         <div>
             <Navigation>
-                <Link href='/'>
+                <Link href={`/`}>
                     <a>Главная</a>
                 </Link>
-                <Link href='/patients'>
+                <Link href={`/patients`}>
                     <a>Пациентам</a>
                 </Link>
                 <span>Информация для посетителей</span>

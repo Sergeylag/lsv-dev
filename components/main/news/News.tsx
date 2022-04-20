@@ -6,9 +6,9 @@ export default function News () {
         <MainNews>
             <div className='content-wrapper'>
                 <h2>Новости</h2>
-                <ul className='posts__list'></ul>
+                <ul className='posts__list'/>
                 <nav>
-                    <Link href='/posts'>
+                    <Link href={`/posts`}>
                         <a>Все новости</a>
                     </Link>
                 </nav>
