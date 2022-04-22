@@ -13,6 +13,9 @@ export default function Partners() {
             autoSlider()
         }, 5000)
         setCurrentInterval(Number(inter))
+        return () => {
+            clearTimeout(Number(inter))
+        }
     }, [current])
 
     function autoSlider(){
